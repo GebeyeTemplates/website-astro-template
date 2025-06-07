@@ -1,4 +1,48 @@
-# Astro Starter Kit: Minimal
+# Astro Website Boilerplate
+
+A production-ready, minimal-change Astro template for any website. Includes essential components, best practices, and is ready for code generation tools.
+
+## Features
+- Modern Astro + Tailwind CSS
+- Responsive Header (navigation bar)
+- Hero, Features, and Testimonials sections
+- SEO meta management
+- Custom Footer
+- Custom 404 error page
+- Web app manifest and favicon
+- Easy to customize and extend
+
+## Getting Started
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+3. **Build for production:**
+   ```bash
+   npm run build
+   ```
+4. **Preview production build:**
+   ```bash
+   npm run preview
+   ```
+
+## Customization
+- Update content in `src/components/sections/` for Hero, Features, and Testimonials.
+- Edit navigation links in `src/components/Header.astro`.
+- Update meta tags in `src/components/SEO.astro` or per page.
+- Replace logo and favicon in `public/`.
+- Add or modify sections as needed.
+
+## Deployment
+Deploy the `dist/` folder to your preferred static hosting (Vercel, Netlify, etc.).
+
+## License
+MIT
 
 ```sh
 npm create astro@latest -- --template minimal

@@ -1,16 +1,43 @@
 ---
-
+const pageTitle = "Welcome to Your Blank App";
+const pageDescription = "Start building your amazing project here!";
 ---
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" />
+    <style>
+      body {
+        background: #e5e5e5;
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Inter', Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .center {
+        text-align: center;
+      }
+      .title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #23272f;
+        margin-bottom: 0.5rem;
+      }
+      .subtitle {
+        font-size: 1.25rem;
+        color: #6b7280;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="center">
+      <div class="title">Welcome to Your Blank App</div>
+      <div class="subtitle">Start building your amazing project here!</div>
+    </main>
+  </body>
 </html>

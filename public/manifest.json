@@ -1,0 +1,16 @@
+{
+  "name": "Astro Website Boilerplate",
+  "short_name": "AstroSite",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e293b",
+  "theme_color": "#1e293b",
+  "description": "A production-ready Astro website boilerplate.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+} 

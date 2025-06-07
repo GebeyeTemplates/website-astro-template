@@ -1,0 +1,48 @@
+---
+import Button from '../Button.astro';
+// You might use Pexels for images as per Dala's instructions
+const heroImageUrl = 'https://images.pexels.com/photos/1036838/pexels-photo-1036838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940';
+---
+<section class="relative bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20 overflow-hidden shadow-elevated">
+  <div class="absolute inset-0 z-0 opacity-10">
+    <img 
+      src={heroImageUrl} 
+      alt="Abstract background" 
+      loading="eager"
+      class="object-cover w-full h-full"
+    />
+  </div>
+  <div class="container mx-auto px-4 relative z-10 text-center">
+    <h1 class="text-5xl md:text-6xl font-display font-extrabold leading-tight mb-4 animate-fade-in-up">
+      Build Amazing Web Experiences, Faster
+    </h1>
+    <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto animate-fade-in-up delay-200">
+      Dala's cutting-edge code generation platform empowers you to create stunning, production-ready applications with unparalleled efficiency.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up delay-400">
+      <Button href="#" variant="secondary" size="lg">Get Started</Button>
+      <Button href="#" variant="outline" size="lg" class="text-white border-white hover:bg-white hover:text-primary">Learn More</Button>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Basic keyframe animation for demonstration */
+  @keyframes fadeInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInFromBottom 0.8s ease-out forwards;
+    opacity: 0; /* Start invisible */
+  }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-400 { animation-delay: 0.4s; }
+</style>
